@@ -1,0 +1,14 @@
+{
+  type: 'object'
+  title: 'Regular Bot'
+  'x-group-name': 'Bot'
+  required: ['slurry']
+  properties:
+    slurry:
+      type: 'object'
+      properties:
+        disabled:
+          type: 'boolean'
+          title: 'Disabled'
+          description: 'Stop streaming'
+}
