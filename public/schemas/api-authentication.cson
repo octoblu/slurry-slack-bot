@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "properties": {
+    "token": {
+      "title": "Token",
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}
