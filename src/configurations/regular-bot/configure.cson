@@ -6,9 +6,4 @@
   properties:
     slurry:
       type: 'object'
-      properties:
-        disabled:
-          type: 'boolean'
-          title: 'Disabled'
-          description: 'Stop streaming'
 }

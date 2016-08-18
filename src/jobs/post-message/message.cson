@@ -1,0 +1,19 @@
+{
+  type: 'object'
+  title: 'Post Message'
+  'x-group-name': 'Messages'
+  required: ['data']
+  properties:
+    data:
+      type: 'object'
+      required: ['channel', 'text']
+      properties:
+        channel:
+          type: 'string'
+          title: 'Channel'
+          description: 'Slack channel id'
+        text:
+          type: 'string'
+          title: 'Text'
+          description: 'Message text'
+}

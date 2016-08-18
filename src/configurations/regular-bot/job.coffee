@@ -15,12 +15,14 @@ class RegularBot
     bot.destroy = bot.close
 
     bot.started (payload) =>
+      @metadata = _.pick payload.self, ['id', 'name', 'created', 'manual_presence']
       return callback null, bot
 
     bot.message (data) =>
       message =
         devices: ["*"]
         data: data
+        metadata: @metadata
 
       @_throttledMessage message, as: @userDeviceUuid, (error) =>
         console.error error if error?

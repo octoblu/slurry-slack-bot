@@ -1,0 +1,20 @@
+{
+  type: 'object'
+  required: ['metadata', 'data']
+  properties:
+    data:
+      type: 'array'
+      items:
+        type: 'object'
+        required: ['ok', 'ts', 'channel']
+        properties:
+          ok:
+            type: 'boolean'
+            description: 'Success or failure of message posting'
+          ts:
+            type: 'string'
+            description: 'message timestamp'
+          channel:
+            type: 'string'
+            description: 'Slack channel id'
+}
